@@ -16,7 +16,6 @@ int main(int argc, char *argv[]){
 
     auto cli = (
         option("-t", "--threads").doc("Number of threads [8]") & value("threads", t),
-        option("-k", "--kmer").doc("K-mer length [21]") & value("k-size", k_size),
         option("-o").doc("Output path [./]") & value("outpath", output),
         value("kmer_dump", kmerfile).doc("Dump file of jellyfish result"),
         value("reference", reference).doc("fasta file of reference"),
